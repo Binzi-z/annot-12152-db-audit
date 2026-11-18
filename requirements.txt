@@ -1,0 +1,11 @@
+# 12152 · 影像平台的增量合规扫描 —— Python 依赖声明
+#
+# 运行时依赖：无。
+# analyzer.py / scan.py / eval.py / eval_samples.py 只 import Python 标准库：
+#   argparse、hashlib、json、os、re、shutil、subprocess、sys、tempfile
+# 被扫描的语料本身是 Go（pkg/**、main.go），只需要 Go >= 1.21 工具链，见 go.mod。
+#
+# 测试依赖：仅 pytest 一个包，跑测试用
+#   python -m pytest tests/ -q
+# tests/ 里的用例同样只 import 标准库，pytest 只是运行器。
+pytest>=7.0

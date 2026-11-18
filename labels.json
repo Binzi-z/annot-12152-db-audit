@@ -63,7 +63,15 @@
    "file": "pkg/handlers/handlers.go",
    "line": 158,
    "entry": "Handle07"
+  },
+  {
+   "id": "v08",
+   "sink": "path_traversal",
+   "label": "路径穿越",
+   "file": "pkg/handlers/extra.go",
+   "line": 14,
+   "entry": "Handle14"
   }
  ],
- "total": 8
+ "total": 9
 }

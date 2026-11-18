@@ -1,0 +1,217 @@
+{
+ "$schema": "https://json.schemastore.org/sarif-2.1.0.json",
+ "version": "2.1.0",
+ "runs": [
+  {
+   "tool": {
+    "driver": {
+     "name": "incr-taint",
+     "version": "3",
+     "rules": [
+      {
+       "id": "cwe-89",
+       "name": "sql-injection",
+       "shortDescription": {
+        "text": "SQL 注入：未净化的用户输入进入 SQL 查询"
+       }
+      },
+      {
+       "id": "cwe-78",
+       "name": "command-injection",
+       "shortDescription": {
+        "text": "命令注入：未净化的用户输入进入命令执行"
+       }
+      },
+      {
+       "id": "cwe-22",
+       "name": "path-traversal",
+       "shortDescription": {
+        "text": "路径穿越：未净化的用户输入进入文件路径"
+       }
+      },
+      {
+       "id": "cwe-918",
+       "name": "ssrf",
+       "shortDescription": {
+        "text": "SSRF：未净化的用户输入进入外发请求"
+       }
+      }
+     ]
+    }
+   },
+   "results": [
+    {
+     "ruleId": "cwe-22",
+     "level": "error",
+     "message": {
+      "text": "路径穿越：未净化的用户输入进入文件路径"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/extra.go"
+        },
+        "region": {
+         "startLine": 14
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-89",
+     "level": "error",
+     "message": {
+      "text": "SQL 注入：未净化的用户输入进入 SQL 查询"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 74
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-78",
+     "level": "error",
+     "message": {
+      "text": "命令注入：未净化的用户输入进入命令执行"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 86
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-22",
+     "level": "error",
+     "message": {
+      "text": "路径穿越：未净化的用户输入进入文件路径"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 98
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-918",
+     "level": "error",
+     "message": {
+      "text": "SSRF：未净化的用户输入进入外发请求"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 110
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-89",
+     "level": "error",
+     "message": {
+      "text": "SQL 注入：未净化的用户输入进入 SQL 查询"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 122
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-78",
+     "level": "error",
+     "message": {
+      "text": "命令注入：未净化的用户输入进入命令执行"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 134
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-22",
+     "level": "error",
+     "message": {
+      "text": "路径穿越：未净化的用户输入进入文件路径"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 146
+        }
+       }
+      }
+     ]
+    },
+    {
+     "ruleId": "cwe-918",
+     "level": "error",
+     "message": {
+      "text": "SSRF：未净化的用户输入进入外发请求"
+     },
+     "locations": [
+      {
+       "physicalLocation": {
+        "artifactLocation": {
+         "uri": "pkg/handlers/handlers.go"
+        },
+        "region": {
+         "startLine": 158
+        }
+       }
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

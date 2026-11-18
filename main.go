@@ -20,5 +20,6 @@ func main() {
 	http.HandleFunc("/safehandle11", handlers.SafeHandle11)
 	http.HandleFunc("/safehandle12", handlers.SafeHandle12)
 	http.HandleFunc("/safehandle13", handlers.SafeHandle13)
+	http.HandleFunc("/handle14", handlers.Handle14)
 	http.ListenAndServe(":8080", nil)
 }
